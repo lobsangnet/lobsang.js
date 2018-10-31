@@ -2,11 +2,11 @@
 
 This repository contains packages to use for Lobsang.
 
-See [lobsang.technology][website] for details.
+See [lobsang.network][website] for details.
 
 ## License
 
 Apache License. See [LICENSE.txt][license]
 
 [license]: ./LICENSE.txt
-[website]: http://lobsang.technology/
+[website]: http://lobsang.network/
