@@ -4,6 +4,9 @@
   "description": "This repository contains packages to use for Lobsang.",
   "main": "index.js",
   "scripts": {
+    "lerna": "lerna",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -13,10 +16,21 @@
   "keywords": [
     "lobsang"
   ],
-  "author": "",
+  "engines": {
+    "node": "11.0.0",
+    "npm": "6.4.1"
+  },
+  "author": "André Jaenisch",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/lobsangnet/lobsang.js/issues"
   },
-  "homepage": "https://github.com/lobsangnet/lobsang.js#readme"
+  "homepage": "https://github.com/lobsangnet/lobsang.js#readme",
+  "devDependencies": {
+    "@commitlint/cli": "7.2.1",
+    "@commitlint/config-conventional": "7.1.2",
+    "husky": "1.1.2",
+    "lerna": "3.4.3",
+    "standard": "12.0.1"
+  }
 }
