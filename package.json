@@ -7,7 +7,7 @@
     "lerna": "lerna",
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "snyk test"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "@commitlint/config-conventional": "7.1.2",
     "husky": "1.1.2",
     "lerna": "3.4.3",
+    "snyk": "1.105.1",
     "standard": "12.0.1"
   }
 }
