@@ -1,13 +1,12 @@
 # Lobsang.js
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/lobsangnet/lobsang.js.svg)](https://greenkeeper.io/)
-
 This repository contains packages to use for Lobsang.
 
-[![CircleCI][circleci-badge]][circleci-report]
+[![CircleCI for continous integration][circleci-badge]][circleci-report]
+[![Greenkeeper for keeping dependencies up-to-date][greenkeeper-badge]][greenkeeper-website]
 [![JavaScript Style Guide][standard-badge]][standard-website]
-[![lerna][lerna-badge]][lerna-website]
-[![Known Vulnerabilities][snyk-badge]][snyk-report]
+[![lerna to manage a monorepo][lerna-badge]][lerna-website]
+[![Known Vulnerabilities are searched for by SNYK][snyk-badge]][snyk-report]
 
 See [lobsang.network][website] for details.
 
@@ -17,6 +16,8 @@ Apache License. See [LICENSE.txt][license]
 
 [circleci-badge]: https://circleci.com/gh/lobsangnet/lobsang.js/tree/master.svg?style=shield
 [circleci-report]: https://circleci.com/gh/lobsangnet/lobsang.js/tree/master
+[greenkeeper-badge]: https://badges.greenkeeper.io/lobsangnet/lobsang.js.svg
+[greenkeeper-website]: https://greenkeeper.io/
 [lerna-badge]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
 [lerna-website]: https://lernajs.io/
 [license]: ./LICENSE.txt
