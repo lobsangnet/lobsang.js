@@ -1,5 +1,7 @@
 # Lobsang.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lobsangnet/lobsang.js.svg)](https://greenkeeper.io/)
+
 This repository contains packages to use for Lobsang.
 
 [![CircleCI][circleci-badge]][circleci-report]
