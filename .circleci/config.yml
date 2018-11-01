@@ -1,0 +1,13 @@
+version: 2.1
+executors:
+  test-exec:
+    docker:
+      - image: circleci/node:11
+
+jobs:
+  test:
+    description: "Runs the test suite"
+    executor: test-exec
+    steps:
+      - run: npm run test
+
