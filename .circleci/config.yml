@@ -49,6 +49,13 @@ jobs:
       # run tests!
       - run: npm run test
 
+      - store_artifacts:
+          path: ~/repo/coverage
+          destination: test-coverage
+
+      - store_test_results:
+          path: ~/repo/coverage
+
 workflows:
   version: 2
   workflow:
