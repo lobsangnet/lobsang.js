@@ -8,7 +8,7 @@
     "lint": "standard",
     "lint:fix": "standard --fix",
     "pretest": "snyk test",
-    "test": "nyc ava",
+    "test": "nyc ava --tap | tap-xunit > coverage/junit.xml",
     "test:watch": "ava --watch --tap | tap-dot"
   },
   "repository": {
@@ -37,6 +37,6 @@
     "nyc": "13.1.0",
     "snyk": "1.105.1",
     "standard": "12.0.1",
-    "tap-dot": "2.0.0"
+    "tap-xunit": "2.3.0"
   }
 }
