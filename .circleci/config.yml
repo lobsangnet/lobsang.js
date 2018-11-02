@@ -25,7 +25,7 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: npm install
+      - run: npm install && npm i https://matrix.org/packages/npm/olm/olm-2.3.0.tgz
 
       - save_cache:
           key: v1-dependencies-{{ checksum "package.json" }}
