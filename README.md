@@ -2,9 +2,12 @@
 
 This repository contains packages to use for Lobsang.
 
+## Badges
+
 [![CircleCI for continous integration][circleci-badge]][circleci-report]
 [![codecov for coverage report summary][codecov-badge]][codecov-report]
 [![Greenkeeper for keeping dependencies up-to-date][greenkeeper-badge]][greenkeeper-website]
+[![NPM package foo][npm-package-badge]][npm-package-site]
 [![JavaScript Style Guide][standard-badge]][standard-website]
 [![lerna to manage a monorepo][lerna-badge]][lerna-website]
 [![Known Vulnerabilities are searched for by SNYK][snyk-badge]][snyk-report]
@@ -24,6 +27,8 @@ Apache License. See [LICENSE.txt][license]
 [lerna-badge]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
 [lerna-website]: https://lernajs.io/
 [license]: ./LICENSE.txt
+[npm-package-badge]: https://nodei.co/npm/@lobsangnet/foo.png
+[npm-packages-website]: https://npmjs.org/package/@lobsangnet/foo
 [snyk-badge]: https://snyk.io/test/github/lobsangnet/lobsang.js/badge.svg
 [snyk-report]: https://snyk.io/test/github/lobsangnet/lobsang.js
 [standard-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
