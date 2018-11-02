@@ -3,6 +3,7 @@
 This repository contains packages to use for Lobsang.
 
 [![CircleCI for continous integration][circleci-badge]][circleci-report]
+[![codecov for coverage report summary][codecov-badge]][codecov-report]
 [![Greenkeeper for keeping dependencies up-to-date][greenkeeper-badge]][greenkeeper-website]
 [![JavaScript Style Guide][standard-badge]][standard-website]
 [![lerna to manage a monorepo][lerna-badge]][lerna-website]
@@ -16,6 +17,8 @@ Apache License. See [LICENSE.txt][license]
 
 [circleci-badge]: https://circleci.com/gh/lobsangnet/lobsang.js/tree/master.svg?style=shield
 [circleci-report]: https://circleci.com/gh/lobsangnet/lobsang.js/tree/master
+[codecov-badge]: https://codecov.io/gh/lobsangnet/lobsang.js/branch/master/graph/badge.svg
+[codecov-report]: https://codecov.io/gh/lobsangnet/lobsang.js
 [greenkeeper-badge]: https://badges.greenkeeper.io/lobsangnet/lobsang.js.svg
 [greenkeeper-website]: https://greenkeeper.io/
 [lerna-badge]: https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg
