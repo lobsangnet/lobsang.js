@@ -47,7 +47,7 @@ jobs:
             - v1-dependencies-
 
       # run tests!
-      - run: npm run test
+      - run: npm run test && npm run codecov
 
       - store_artifacts:
           path: ~/repo/coverage
