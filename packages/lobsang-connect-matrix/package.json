@@ -1,0 +1,42 @@
+{
+  "name": "@lobsangnet/lobsang-connect-matrix",
+  "version": "0.1.0",
+  "description": "Allows connection to matrix for writing.",
+  "keywords": [
+    "matrix",
+    "lobsang",
+    "lerna"
+  ],
+  "author": "André Jaenisch <andre.jaenisch@posteo.de>",
+  "homepage": "https://github.com/lobsangnet/lobsang.js/tree/master/packages/lobsang-connect-matrix#readme",
+  "license": "Apache-2.0",
+  "main": "lib/lobsang-connect-matrix.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "engines": {
+    "node": "11.0.0",
+    "npm": "6.4.1"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobsangnet/lobsang.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/lobsangnet/lobsang.js/issues"
+  },
+  "dependencies": {
+    "matrix-js-sdk": "0.12.1",
+    "undefined": "https://matrix.org/packages/npm/olm/olm-2.3.0.tgz"
+  }
+}

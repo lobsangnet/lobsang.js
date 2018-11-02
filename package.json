@@ -23,7 +23,7 @@
     "node": "11.0.0",
     "npm": "6.4.1"
   },
-  "author": "André Jaenisch",
+  "author": "André Jaenisch <andre.jaenisch@posteo.de>",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/lobsangnet/lobsang.js/issues"
