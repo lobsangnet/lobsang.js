@@ -4,6 +4,7 @@
   "description": "This repository contains packages to use for Lobsang.",
   "main": "index.js",
   "scripts": {
+    "bootstrap": "lerna bootstrap --hoist",
     "codecov": "codecov -t $CODECOV_TOKEN",
     "lerna": "lerna",
     "lint": "standard",
