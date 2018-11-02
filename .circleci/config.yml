@@ -84,7 +84,10 @@ workflows:
   workflow:
     jobs:
       - build
+      - lerna:
+          requires:
+            - build
       - test:
           context: Lobsang-SNYK_TOKEN
           requires:
-            - build
+            - lerna
