@@ -2,11 +2,10 @@
   "check-coverage": true,
   "per-file": true,
   "include": [
-    "src/*.js",
-    "test/*.js"
+    "packages/**/lib/*.js"
   ],
   "exclude": [
-    "test/*.spec.js"
+    "packages/**/__tests__/*.js"
   ],
   "reporter": [
     "lcov",
