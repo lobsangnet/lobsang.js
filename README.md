@@ -7,10 +7,11 @@ This repository contains packages to use for Lobsang.
 [![CircleCI for continous integration][circleci-badge]][circleci-report]
 [![codecov for coverage report summary][codecov-badge]][codecov-report]
 [![Greenkeeper for keeping dependencies up-to-date][greenkeeper-badge]][greenkeeper-website]
-[![NPM package foo][npm-package-badge]][npm-package-site]
 [![JavaScript Style Guide][standard-badge]][standard-website]
 [![lerna to manage a monorepo][lerna-badge]][lerna-website]
 [![Known Vulnerabilities are searched for by SNYK][snyk-badge]][snyk-report]
+
+[![NPM package foo][npm-package-badge]][npm-package-website]
 
 See [lobsang.network][website] for details.
 
