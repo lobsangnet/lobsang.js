@@ -29,7 +29,7 @@ Apache License. See [LICENSE.txt][license]
 [lerna-website]: https://lernajs.io/
 [license]: ./LICENSE.txt
 [npm-package-badge]: https://nodei.co/npm/@lobsangnet/lobsang-connect-matrix.png
-[npm-packages-website]: https://npmjs.org/package/@lobsangnet/lobsang-connect-matrix
+[npm-package-website]: https://npmjs.org/package/@lobsangnet/lobsang-connect-matrix
 [snyk-badge]: https://snyk.io/test/github/lobsangnet/lobsang.js/badge.svg
 [snyk-report]: https://snyk.io/test/github/lobsangnet/lobsang.js
 [standard-badge]: https://img.shields.io/badge/code_style-standard-brightgreen.svg
