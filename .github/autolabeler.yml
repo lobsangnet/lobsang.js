@@ -1,0 +1,4 @@
+frontend: [ "/src/fe/*.js", "*.css", "*.html" ]
+backend: [ "/src/app" ]
+legal: [ "LICENSE*", "NOTICES*" ]
+config: .github
