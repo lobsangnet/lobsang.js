@@ -36,7 +36,8 @@
     "url": "https://github.com/lobsangnet/lobsang.js/issues"
   },
   "dependencies": {
+    "dotenv": "^6.1.0",
     "matrix-js-sdk": "0.12.1",
-    "undefined": "https://matrix.org/packages/npm/olm/olm-2.3.0.tgz"
+    "olm": "https://matrix.org/packages/npm/olm/olm-2.3.0.tgz"
   }
 }
