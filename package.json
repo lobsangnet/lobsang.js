@@ -5,10 +5,14 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "lerna bootstrap --hoist",
+    "cleanup": "find . -type f -name \"*.sw[klmnop]\" -delete",
     "codecov": "codecov -t $CODECOV_TOKEN",
     "lerna": "lerna",
     "lint": "standard",
     "lint:fix": "standard --fix",
+    "publish": "lerna publish --skip-git",
+    "precleanup": "find . -type f -name \"*.*~\" -delete",
+    "prepublish": "npm run cleanup",
     "pretest": "snyk test",
     "test": "nyc ava --tap | tap-xunit > coverage/junit.xml",
     "test:watch": "ava --watch"
