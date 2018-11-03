@@ -10,7 +10,7 @@
     "lerna": "lerna",
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "publish": "lerna publish --skip-git",
+    "publish": "lerna publish --no-git-tag-version --no-push",
     "precleanup": "find . -type f -name \"*.*~\" -delete",
     "prepublish": "npm run cleanup",
     "pretest": "snyk test",
