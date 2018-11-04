@@ -8,6 +8,7 @@
     "bootstrap:hoist": "lerna bootstrap --hoist",
     "cleanup": "find . -type f -name \"*.sw[klmnop]\" -delete",
     "codecov": "codecov -t $CODECOV_TOKEN",
+    "doc": "jsdoc -c .jsdoc.conf.json -d ./docs -p ./package.json -R README.md -t ./node_modules/ink-docstrap/template -r packages/**/lib/*.js",
     "lerna": "lerna",
     "lint": "standard",
     "lint:fix": "standard --fix",
@@ -27,6 +28,7 @@
   ],
   "standard": {
     "ignore": [
+      "docs",
       "packages/lobsang-connect-matrix/__tests__/client.test.js",
       "packages/lobsang-connect-matrix/__tests__/connect.test.js",
       "packages/lobsang-connect-matrix/__tests__/lobsang-connect-matrix.test.js"
@@ -48,6 +50,8 @@
     "ava": "1.0.0-rc.1",
     "codecov": "3.1.0",
     "husky": "1.1.3",
+    "ink-docstrap": "1.3.2",
+    "jsdoc": "3.5.5",
     "lerna": "3.4.3",
     "nyc": "13.1.0",
     "snyk": "1.106.1",
