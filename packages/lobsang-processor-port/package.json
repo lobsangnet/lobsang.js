@@ -1,0 +1,37 @@
+{
+  "name": "@lobsangnet/lobsang-processor-port",
+  "version": "0.1.0",
+  "description": "Extracts the port from an URL",
+  "keywords": [
+    "lobsang",
+    "port",
+    "url"
+  ],
+  "author": "André Jaenisch <andre.jaenisch@posteo.de>",
+  "homepage": "https://github.com/lobsangnet/lobsang.js/tree/master/packages/lobsang-processor-port#readme",
+  "license": "Apache-2.0",
+  "main": "lib/lobsang-processor-port.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobsangnet/lobsang.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/lobsangnet/lobsang.js/issues"
+  },
+  "dependencies": {
+    "port-numbers": "4.0.4"
+  }
+}
