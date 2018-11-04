@@ -4,7 +4,8 @@
   "description": "This repository contains packages to use for Lobsang.",
   "main": "index.js",
   "scripts": {
-    "bootstrap": "lerna bootstrap --hoist",
+    "bootstrap": "lerna bootstrap",
+    "bootstrap:hoist": "lerna bootstrap --hoist",
     "cleanup": "find . -type f -name \"*.sw[klmnop]\" -delete",
     "codecov": "codecov -t $CODECOV_TOKEN",
     "lerna": "lerna",
