@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>An Offline Life Class: FormData</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.dark.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">An Offline Life</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="FormData.html">FormData</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="global.html" class="dropdown-toggle" data-toggle="dropdown">Global<b class="caret"></b></a>
+				<ul class="dropdown-menu ">
+					<li><a href="global.html#_read">_read</a></li><li><a href="global.html#_start">_start</a></li><li><a href="global.html#abort">abort</a></li><li><a href="global.html#addFormat">addFormat</a></li><li><a href="global.html#addKeyword">addKeyword</a></li><li><a href="global.html#addMetaSchema">addMetaSchema</a></li><li><a href="global.html#addOptionType">addOptionType</a></li><li><a href="global.html#addSchema">addSchema</a></li><li><a href="global.html#Ajv">Ajv</a></li><li><a href="global.html#arrayToPromise">arrayToPromise</a></li><li><a href="global.html#ascending">ascending</a></li><li><a href="global.html#async">async</a></li><li><a href="global.html#authorization">authorization</a></li><li><a href="global.html#bashCompletionFromOptions">bashCompletionFromOptions</a></li><li><a href="global.html#bashCompletionSpecFromOptions">bashCompletionSpecFromOptions</a></li><li><a href="global.html#byteToHex">byteToHex</a></li><li><a href="global.html#canonicalizeHeaders">canonicalizeHeaders</a></li><li><a href="global.html#canonicalizeResource">canonicalizeResource</a></li><li><a href="global.html#charset">charset</a></li><li><a href="global.html#check">check</a></li><li><a href="global.html#checkCompiling">checkCompiling</a></li><li><a href="global.html#clean">clean</a></li><li><a href="global.html#co">co</a></li><li><a href="global.html#compile">compile</a></li><li><a href="global.html#compileAsync">compileAsync</a></li><li><a href="global.html#compIndex">compIndex</a></li><li><a href="global.html#ContentType">ContentType</a></li><li><a href="global.html#contentType">contentType</a></li><li><a href="global.html#crypto">crypto</a></li><li><a href="global.html#db">db</a></li><li><a href="global.html#defer">defer</a></li><li><a href="global.html#descending">descending</a></li><li><a href="global.html#destroy">destroy</a></li><li><a href="global.html#endCompiling">endCompiling</a></li><li><a href="global.html#errorsText">errorsText</a></li><li><a href="global.html#extension">extension</a></li><li><a href="global.html#EXTRACT_TYPE_REGEXP">EXTRACT_TYPE_REGEXP</a></li><li><a href="global.html#finisher">finisher</a></li><li><a href="global.html#format">format</a></li><li><a href="global.html#getcontenttype">getcontenttype</a></li><li><a href="global.html#getKeyword">getKeyword</a></li><li><a href="global.html#getSchema">getSchema</a></li><li><a href="global.html#hmacSha1">hmacSha1</a></li><li><a href="global.html#isGenerator">isGenerator</a></li><li><a href="global.html#isGeneratorFunction">isGeneratorFunction</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isPromise">isPromise</a></li><li><a href="global.html#iterate">iterate</a></li><li><a href="global.html#keys">keys</a></li><li><a href="global.html#lookup">lookup</a></li><li><a href="global.html#objectToPromise">objectToPromise</a></li><li><a href="global.html#optionKeyFromName">optionKeyFromName</a></li><li><a href="global.html#parallel">parallel</a></li><li><a href="global.html#PARAM_REGEXP">PARAM_REGEXP</a></li><li><a href="global.html#parse">parse</a></li><li><a href="global.html#parseDate">parseDate</a></li><li><a href="global.html#Parser">Parser</a></li><li><a href="global.html#path">path</a></li><li><a href="global.html#populateMaps">populateMaps</a></li><li><a href="global.html#punycode">punycode</a></li><li><a href="global.html#QESC_REGEXP">QESC_REGEXP</a></li><li><a href="global.html#qstring">qstring</a></li><li><a href="global.html#queryStringToSign">queryStringToSign</a></li><li><a href="global.html#QUOTE_REGEXP">QUOTE_REGEXP</a></li><li><a href="global.html#ReadableAsyncKit">ReadableAsyncKit</a></li><li><a href="global.html#ReadableParallel">ReadableParallel</a></li><li><a href="global.html#ReadableSerial">ReadableSerial</a></li><li><a href="global.html#ReadableSerialOrdered">ReadableSerialOrdered</a></li><li><a href="global.html#removeKeyword">removeKeyword</a></li><li><a href="global.html#removeSchema">removeSchema</a></li><li><a href="global.html#resolve">resolve</a></li><li><a href="global.html#resolveSchema">resolveSchema</a></li><li><a href="global.html#runJob">runJob</a></li><li><a href="global.html#serial">serial</a></li><li><a href="global.html#serialOrdered">serialOrdered</a></li><li><a href="global.html#shallowCopy">shallowCopy</a></li><li><a href="global.html#sign">sign</a></li><li><a href="global.html#signQuery">signQuery</a></li><li><a href="global.html#slice">slice</a></li><li><a href="global.html#state">state</a></li><li><a href="global.html#streamer">streamer</a></li><li><a href="global.html#stringToSign">stringToSign</a></li><li><a href="global.html#synopsisFromOpt">synopsisFromOpt</a></li><li><a href="global.html#terminator">terminator</a></li><li><a href="global.html#textwrap">textwrap</a></li><li><a href="global.html#thunkToPromise">thunkToPromise</a></li><li><a href="global.html#toPromise">toPromise</a></li><li><a href="global.html#TYPE_REGEXP">TYPE_REGEXP</a></li><li><a href="global.html#validate">validate</a></li><li><a href="global.html#validateSchema">validateSchema</a></li><li><a href="global.html#wrapCallback">wrapCallback</a></li><li><a href="global.html#wrapIterator">wrapIterator</a></li><li><a href="global.html#wrapIteratorCallback">wrapIteratorCallback</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-8">
+	
+		<div id="main">
+			
+
+	<h1 class="page-title">Class: FormData</h1>
+<section>
+
+<header>
+    
+        <h2>
+        FormData
+        </h2>
+        
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+<hr>
+<dt>
+    <h4 class="name" id="FormData"><span class="type-signature"></span>new FormData(options)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Create readable &quot;multipart/form-data&quot; streams.
+Can be used to submit forms
+and file uploads to other web applications.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Properties to be added/overriden for FormData and CombinedStream</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3 hidden-xs hidden-sm hidden-md"></div>
+		</div>
+	
+
+</div>
+</div>
+
+
+
+<footer>
+
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
+	
+		on 2018-11-04T22:23:18+01:00
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : false,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+
+</body>
+</html>

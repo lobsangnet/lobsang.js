@@ -1,0 +1,11 @@
+{
+  "plugins": ["plugins/markdown"],
+  "templates": {
+  	"systemName": "Lobsang Network",
+  	"theme": "cosmo",
+  	"navType": "vertical",
+  	"inverseNav": true,
+  	"syntaxTheme": "dark",
+  	"search": false
+  }
+}
