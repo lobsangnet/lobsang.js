@@ -23,6 +23,7 @@ const CONSTANTS = require('./constants')
 
 /**
  * Connects to a MatrixClient and resolves once connection was established.
+ *
  * @private
  * @arg {MatrixClient} client - The client used for connection.
  * @returns {Promise<MatrixClient|Error>}
@@ -43,6 +44,15 @@ function connect (client) {
   })
 }
 
+/**
+ * Helper method to check the state against those indicating some sync state.
+ *
+ * @private
+ * @arg {String} state - The current state of MatrixClient
+ * @returns {Boolean}
+ *   Indicating whether the client is already synced (or syncing)
+ *   Or in another state.
+ */
 function isSyncState (state) {
   if (state === CONSTANTS.MATRIX_STATE_PREPARED) {
     return true

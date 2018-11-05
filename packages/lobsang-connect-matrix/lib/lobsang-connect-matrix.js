@@ -44,6 +44,12 @@ const lobsangConnectMatrix = async (rawMessage) => {
   return Promise.resolve(true)
 }
 
+/**
+ * Wrapper around connect call for readability purposes.
+ *
+ * @private
+ * @returns {MatrixClient} - The initialised client
+ */
 function initialiseClient () {
   return connect()
 }
