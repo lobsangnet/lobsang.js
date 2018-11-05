@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Lobsang Network Module: @lobsangnet/lobsang-connect-matrix/check</title>
+	<title>Lobsang Network Module: @lobsangnet/lobsang-processor-hostname</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,7 +61,7 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Module: @lobsangnet/lobsang-connect-matrix/check</h1>
+	<h1 class="page-title">Module: @lobsangnet/lobsang-processor-hostname</h1>
 <section>
 
 <header>
@@ -137,7 +137,7 @@
             
 <hr>
 <dt>
-    <h4 class="name" id="~check"><span class="type-signature">&lt;private, inner> </span>check(message)</h4>
+    <h4 class="name" id="~lobsangProcessorHostname"><span class="type-signature">&lt;inner> </span>lobsangProcessorHostname(link)</h4>
     
     
 </dt>
@@ -145,7 +145,7 @@
 
     
     <div class="description">
-        <p>Checks the message on type etc.</p>
+        <p>Library to process the hostname from an URL.</p>
     </div>
     
 
@@ -180,7 +180,7 @@
 
         <tr>
             
-                <td class="name"><code>message</code></td>
+                <td class="name"><code>link</code></td>
             
 
             <td class="type">
@@ -197,7 +197,7 @@
 
             
 
-            <td class="description last"><p>The message to send.</p></td>
+            <td class="description last"><p>The URL to parse.</p></td>
         </tr>
 
     
@@ -261,8 +261,8 @@
     
             
 <div class="param-desc">
-    <p>Promise which resolved to a cleaned message.
-  Or an Error if rejected.</p>
+    <p>Promise which resolves to the hostname if it could be parsed.
+  Or an Error if the validation failed.</p>
 </div>
 
 
