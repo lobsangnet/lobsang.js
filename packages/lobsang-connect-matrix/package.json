@@ -20,7 +20,8 @@
     "npm": "6.4.1"
   },
   "files": [
-    "lib"
+    "lib",
+    ".env.example"
   ],
   "publishConfig": {
     "access": "public"
