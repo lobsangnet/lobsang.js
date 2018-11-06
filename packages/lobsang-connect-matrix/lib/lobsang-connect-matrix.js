@@ -48,10 +48,11 @@ const lobsangConnectMatrix = async (rawMessage) => {
  * Wrapper around connect call for readability purposes.
  *
  * @private
+ * @arg {MatrixClient} client - The matrix client to initialise.
  * @returns {MatrixClient} - The initialised client
  */
-function initialiseClient () {
-  return connect()
+function initialiseClient (client) {
+  return connect(client)
 }
 
 module.exports = lobsangConnectMatrix
