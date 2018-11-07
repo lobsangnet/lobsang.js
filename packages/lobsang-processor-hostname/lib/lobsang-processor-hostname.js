@@ -15,8 +15,6 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const url = require('url')
-
 /**
  * @module @lobsangnet/lobsang-processor-hostname
  */
@@ -25,15 +23,15 @@ const url = require('url')
  * Library to process the hostname from an URL.
  *
  * @public
- * @arg {String} link - The URL to parse.
- * @returns {Promise<String|Error>}
+ * @param {string} link - The URL to parse.
+ * @returns {Promise<string|Error>}
  *   Promise which resolves to the hostname if it could be parsed.
  *   Or an Error if the validation failed.
  */
 function lobsangProcessorHostname (link) {
   let parts
   try {
-    parts = url.parse(link)
+    parts = parseUrl(link)
   } catch (error) {
     return Promise.reject(error)
   }
@@ -43,6 +41,19 @@ function lobsangProcessorHostname (link) {
   }
 
   return Promise.resolve(parts.hostname)
+}
+
+/**
+ * Helper method to parse a link using WHATWG URL
+ *
+ * @private
+ * @param {string} link - The URL to parse.
+ * @returns {any} - An urlObject containing different aspects of an URL.
+ * @throws {TypeError} - If the parsing failed.
+ * @todo Replace any after https://github.com/Kegsay/flow-jsdoc/issues/22
+ */
+function parseUrl (link) {
+  return new URL(link)
 }
 
 module.exports = lobsangProcessorHostname

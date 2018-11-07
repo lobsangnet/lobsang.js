@@ -1,0 +1,15 @@
+[ignore]
+./docs/.*
+./packages/lobsang-processor-port/lib
+./packages/lobsang-processor-port/__tests__/.*
+
+[include]
+./packages/**/flow/.*
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]

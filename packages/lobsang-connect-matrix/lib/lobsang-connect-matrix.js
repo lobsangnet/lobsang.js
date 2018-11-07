@@ -29,8 +29,8 @@ const send = require('./send')
  * Library to send messages to matrix.
  *
  * @public
- * @arg {String} rawMessage - The message to send.
- * @returns {Promise<Boolean|Error>}
+ * @param {String} rawMessage - The message to send.
+ * @returns {Promise<boolean|Error>}
  *   Promise which resolves to „true” if the message was sent.
  *   Or an Error if something went wrong along the way.
  */
@@ -48,8 +48,9 @@ const lobsangConnectMatrix = async (rawMessage) => {
  * Wrapper around connect call for readability purposes.
  *
  * @private
- * @arg {MatrixClient} client - The matrix client to initialise.
- * @returns {MatrixClient} - The initialised client
+ * @param {any} client - The matrix client to initialise.
+ * @returns {any} - The initialised client
+ * @todo Replace any after https://github.com/Kegsay/flow-jsdoc/issues/22
  */
 function initialiseClient (client) {
   return connect(client)

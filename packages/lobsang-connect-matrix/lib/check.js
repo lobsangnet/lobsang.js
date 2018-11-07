@@ -23,7 +23,7 @@ limitations under the License.
  * Checks the message on type etc.
  *
  * @private
- * @arg {String} message - The message to send.
+ * @param {String} message - The message to send.
  * @returns {Promise<String|Error>}
  *   Promise which resolved to a cleaned message.
  *   Or an Error if rejected.
