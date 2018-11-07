@@ -16,7 +16,11 @@
     "publish": "lerna publish --no-git-tag-version --no-push",
     "precleanup": "find . -type f -name \"*.*~\" -delete",
     "prepublish": "npm run cleanup",
-    "pretest": "snyk test",
+    "pretest": "npm run snyk",
+    "snyk": "snyk test --file=package.json",
+    "snyk:lobsang-connect-matrix": "snyk test --file=packages/lobsang-connect-matrix/package.json",
+    "snyk:lobsang-processor-hostname": "snyk test --file=packages/lobsang-processor-hostname/package.json",
+    "snyk:lobsang-processor-port": "snyk test --file=packages/lobsang-processor-port/package.json",
     "test": "nyc ava --tap | tap-xunit > coverage/junit.xml",
     "test:watch": "ava --watch"
   },
