@@ -25,8 +25,8 @@ const CONSTANTS = require('./constants')
  * Transmits the formatted message to matrix using the provided client.
  *
  * @private
- * @arg {MatrixClient} client - The client using to transmit.
- * @arg {MatrixMessage} message - The message to transmit.
+ * @param {MatrixClient} client - The client using to transmit.
+ * @param {MatrixMessage} message - The message to transmit.
  * @returns {Promise<Boolean>}
  *   Promise which resolves to „true” if message was sent.
  */

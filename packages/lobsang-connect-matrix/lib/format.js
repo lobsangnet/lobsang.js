@@ -32,7 +32,7 @@ const CONSTANTS = require('./constants')
  * Wraps a message into the format Matrix expects.
  *
  * @private
- * @arg {String} message - The message to send.
+ * @param {String} message - The message to send.
  * @returns {Promise<MatrixMessage>}
  *   Promise which resolves to a MatrixMessage.
  */
