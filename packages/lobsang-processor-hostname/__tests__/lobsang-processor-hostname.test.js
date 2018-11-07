@@ -8,7 +8,7 @@ test('rejects if bogus input is sent', async (t) => {
   const error = await t.throwsAsync(async () => {
     await lobsangProcessorHostname(url)
   })
-  t.is(error.message, 'The "url" argument must be of type string. Received type object')
+  t.is(error.message, `Invalid URL: ${url}`)
 })
 
 test('rejects if not an url', async (t) => {
@@ -16,7 +16,7 @@ test('rejects if not an url', async (t) => {
   const error = await t.throwsAsync(async () => {
     await lobsangProcessorHostname(url)
   })
-  t.is(error.message, 'Not an URL')
+  t.is(error.message, `Invalid URL: ${url}`)
 })
 
 test('extracts the hostname from an url', async (t) => {

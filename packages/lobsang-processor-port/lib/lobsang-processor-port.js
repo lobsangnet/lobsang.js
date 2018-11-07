@@ -49,7 +49,7 @@ function lobsangProcessorPort (link) {
     return Promise.reject(new Error('Not an URL'))
   }
 
-  if (parts.port === null) {
+  if (parts.port === '') {
     return getDefaultPortByProtocol(parts.protocol)
   }
 
