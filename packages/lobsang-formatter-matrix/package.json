@@ -1,0 +1,39 @@
+{
+  "name": "@lobsangnet/lobsang-formatter-matrix",
+  "version": "0.1.0",
+  "description": "Formats a message so you can send it to matrix.",
+  "keywords": [
+    "lobsang",
+    "matrix",
+    "format",
+    "lerna"
+  ],
+  "author": "André Jaenisch <andre.jaenisch@posteo.de>",
+  "homepage": "https://github.com/lobsangnet/lobsang.js/tree/master/packages/lobsang-formatter-matrix#readme",
+  "license": "Apache-2.0",
+  "main": "lib/lobsang-formatter-matrix.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "engines": {
+    "node": "11.0.0",
+    "npm": "6.4.1"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lobsangnet/lobsang.js.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/lobsangnet/lobsang.js/issues"
+  }
+}
