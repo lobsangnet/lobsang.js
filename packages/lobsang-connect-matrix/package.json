@@ -37,6 +37,7 @@
     "url": "https://github.com/lobsangnet/lobsang.js/issues"
   },
   "dependencies": {
+    "@lobsangnet/lobsang-formatter-matrix": "0.1.0",
     "dotenv": "6.1.0",
     "matrix-js-sdk": "0.12.1",
     "olm": "https://matrix.org/packages/npm/olm/olm-2.3.0.tgz"

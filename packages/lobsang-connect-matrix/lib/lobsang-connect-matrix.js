@@ -15,10 +15,11 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+const format = require('@lobsangnet/lobsang-formatter-matrix')
+
 const check = require('./check')
 const createClient = require('./client')
 const connect = require('./connect')
-const format = require('./format')
 const send = require('./send')
 
 /**

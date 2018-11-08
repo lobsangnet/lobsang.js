@@ -27,10 +27,6 @@ test('has MATRIX_ROOM_MESSAGE_TYPE', (t) => {
   t.truthy(CONSTANTS.MATRIX_ROOM_MESSAGE_TYPE)
 })
 
-test('has MATRIX_NOTICE_TYPE', (t) => {
-  t.truthy(CONSTANTS.MATRIX_NOTICE_TYPE)
-})
-
 test('has MATRIX_STATE_SYNCING', (t) => {
   t.truthy(CONSTANTS.MATRIX_STATE_SYNCING)
 })
