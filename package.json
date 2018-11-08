@@ -1,6 +1,6 @@
 {
   "name": "lobsang.js",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "This repository contains packages to use for Lobsang.",
   "main": "index.js",
   "scripts": {

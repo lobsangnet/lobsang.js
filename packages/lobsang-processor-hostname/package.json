@@ -1,6 +1,6 @@
 {
   "name": "@lobsangnet/lobsang-processor-hostname",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Extracts the hostname from an url.",
   "keywords": [
     "lobsang",
@@ -31,6 +31,5 @@
   },
   "bugs": {
     "url": "https://github.com/lobsangnet/lobsang.js/issues"
-  },
-  "gitHead": "930b5e8bed95fc6d8ced9c06183ed2c562350052"
+  }
 }
