@@ -21,6 +21,7 @@
     "flow:lobsang-processor-port": "flow-jsdoc -d packages/lobsang-processor-port/lib -o packages/lobsang-processor-port/flow",
     "lerna": "lerna",
     "lerna:create": "lerna create",
+    "lerna:install": "lerna add",
     "lint": "standard",
     "lint:fix": "standard --fix",
     "postdoc": "gh-pages -d docs",

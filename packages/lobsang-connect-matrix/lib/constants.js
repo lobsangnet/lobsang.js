@@ -31,7 +31,6 @@ require('dotenv').config()
  * @property {String} MATRIX_USER_ID - Your user ID.
  * @property {String} MATRIX_ROOM_ID - The room ID to push messages into.
  * @property {String} MATRIX_ROOM_MESSAGE_TYPE - Defined type for room messages.
- * @property {String} MATRIX_NOTICE_TYPE - Defined type for notices.
  * @property {String} MATRIX_STATE_SYNCING - Defined constant for sync state.
  * @property {String} MATRIX_STATE_PREPARED - Defined constant for prepared state.
  */
@@ -41,7 +40,6 @@ CONSTANTS.MATRIX_ACCESS_TOKEN = process.env.MATRIX_ACCESS_TOKEN
 CONSTANTS.MATRIX_USER_ID = process.env.MATRIX_USER_ID
 CONSTANTS.MATRIX_ROOM_ID = process.env.MATRIX_ROOM_ID
 CONSTANTS.MATRIX_ROOM_MESSAGE_TYPE = 'm.room.message'
-CONSTANTS.MATRIX_NOTICE_TYPE = 'm.notice'
 CONSTANTS.MATRIX_STATE_SYNCING = 'SYNCING'
 CONSTANTS.MATRIX_STATE_PREPARED = 'PREPARED'
 
