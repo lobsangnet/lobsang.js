@@ -8,6 +8,7 @@ The Lobsang Network brings search to the decentralised web.
 
 [![CircleCI for continous integration][circleci-badge]][circleci-report]
 [![codecov for coverage report summary][codecov-badge]][codecov-report]
+[![Maintainability][codeclimate-badge]][codeclimate-report]
 [![Greenkeeper for keeping dependencies up-to-date][greenkeeper-badge]][greenkeeper-website]
 [![JavaScript Style Guide][standard-badge]][standard-website]
 [![lerna to manage a monorepo][lerna-badge]][lerna-website]
@@ -21,6 +22,8 @@ Apache License. See [LICENSE.txt][license].
 
 [circleci-badge]: https://circleci.com/gh/lobsangnet/lobsang.js/tree/master.svg?style=shield
 [circleci-report]: https://circleci.com/gh/lobsangnet/lobsang.js/tree/master
+[codeclimate-badge]: https://api.codeclimate.com/v1/badges/1ed4c62e97210c3c1c0c/maintainability
+[codeclimate-report]: https://codeclimate.com/github/lobsangnet/lobsang.js/maintainability
 [codecov-badge]: https://codecov.io/gh/lobsangnet/lobsang.js/branch/master/graph/badge.svg
 [codecov-report]: https://codecov.io/gh/lobsangnet/lobsang.js
 [greenkeeper-badge]: https://badges.greenkeeper.io/lobsangnet/lobsang.js.svg
