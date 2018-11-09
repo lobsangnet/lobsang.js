@@ -16,6 +16,48 @@ The Lobsang Network brings search to the decentralised web.
 
 Explore [packages][packages] for details.
 
+## Naming conventions
+
+This monorepository follows some conventions regarding the naming of packages:
+
+- lobsang-publisher- are dealing with publishing to a channel.
+- lobsang-subscriber- are dealing with reading from a channel. They need a topic.
+- lobsang-connect- are combining publisher and subscriber (to be discussed).
+- lobsang-formatter- are dealing with wrapping strings (or pre-formatted input) into a target format.
+- lobsang-processor- are extracting information from input.
+
+### lobsang-publisher
+
+If you want to write content somewhere, you need a publisher for it.
+For now, there exists only one for Matrix.org, but more are planned
+(e.g. Redis, IPFS, WebTorrents etc).
+
+### lobsang-subscriber
+
+If you want to listen to some messages, you need a subscriber for that medium.
+Not only that, you will need to tell the subscriber, in which `topic`s you are
+interested in, so that it can filter the relevant messages for you.
+
+You can have more than one subscriber running.
+
+### lobsang-connect
+
+This is under discussion. Sometimes, you want to have both, read and write on
+a medium. A lobsang-connect package will combine publisher and subscriber to
+achieve that.
+
+### lobsang-formatter
+
+Often, the medium expects your message to be formatted in a certain way.
+That's why you need a formatter for it. Normally, the publisher will depend on
+it under the hood and takes care of the formatting for you.
+
+### lobsang processor
+
+If you have received a message in a `topic` you are interested in, you most
+likely want to process that message somehow. It would be kind if you could use
+a publisher to feed back the processed information into the network.
+
 ## License
 
 Apache License. See [LICENSE.txt][license].
