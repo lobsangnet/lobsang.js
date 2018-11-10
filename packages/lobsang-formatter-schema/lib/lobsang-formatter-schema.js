@@ -15,15 +15,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-/**
- * @typedef SchemaMessage
- * @type Object
- */
-
-const Ajv = require('ajv')
-const fetch = require('node-fetch')
-
-const LOBSANG_CONTENT_SCHEMA_URL = 'https://raw.githubusercontent.com/lobsangnet/lobsang.schema/master/lobsang.content.schema.json'
+const format = require('./format')
+const schema = require('./schema')
+const validate = require('./validate')
 
 /**
  * @module @lobsangnet/lobsang-formatter-matrix
@@ -44,46 +38,17 @@ function lobsangFormatterSchema (message, topic) {
   if (typeof message !== 'string') {
     return Promise.reject(new Error('Message is not a string'))
   }
-  return getSchemaForTopic(topic)
-    .then((schema) => {
-      const validate = getValidatorForSchema(schema)
 
-      if (validate(message)) {
-        return Promise.resolve(message)
+  return schema(topic)
+    .then((schemaObject) => {
+      const validator = validate(schemaObject)
+      const schemaMessage = format(message)
+
+      if (validator(schemaMessage)) {
+        return Promise.resolve(schemaMessage)
       }
-      return Promise.reject(validate.errors)
+      return Promise.reject(validator.errors)
     })
-}
-
-/**
- * Helper method to get the schema for a topic.
- *
- * @private
- * @param {string} topic - The topic for which a schema should be fetched.
- * @returns {Promise<object|Error>}
- *   Promise which resolves in a schema object.
- *   Or an Error if the topic is not supported or fetch failed.
- */
-function getSchemaForTopic (topic) {
-  if (topic === 'CONTENT') {
-    return fetch(LOBSANG_CONTENT_SCHEMA_URL)
-      .then((response) => response.json())
-  }
-  return Promise.reject(new Error('Topic is not supported'))
-}
-
-/**
- * Helper method to get the validator using ajv.
- *
- * @private
- * @param {object} schema - The schema to validate against.
- * @returns {Function|Error}
- *   Either a validateFunction to use.
- *   Or an Error if the topic is not supported.
- */
-function getValidatorForSchema (schema) {
-  const ajv = new Ajv()
-  return ajv.compile(schema)
 }
 
 module.exports = lobsangFormatterSchema
