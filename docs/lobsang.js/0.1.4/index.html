@@ -33,7 +33,7 @@
 			<li class="dropdown">
 				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="module-@lobsangnet_lobsang-connect-matrix.html">@lobsangnet/lobsang-connect-matrix</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_check.html">@lobsangnet/lobsang-connect-matrix/check</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_client.html">@lobsangnet/lobsang-connect-matrix/client</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_connect.html">@lobsangnet/lobsang-connect-matrix/connect</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_constants.html">@lobsangnet/lobsang-connect-matrix/constants</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_send.html">@lobsangnet/lobsang-connect-matrix/send</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix.html">@lobsangnet/lobsang-formatter-matrix</a></li><li><a href="module-@lobsangnet_lobsang-processor-hostname.html">@lobsangnet/lobsang-processor-hostname</a></li><li><a href="module-@lobsangnet_lobsang-processor-port.html">@lobsangnet/lobsang-processor-port</a></li>
+					<li><a href="module-@lobsangnet_lobsang-connect-matrix.html">@lobsangnet/lobsang-connect-matrix</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_check.html">@lobsangnet/lobsang-connect-matrix/check</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_client.html">@lobsangnet/lobsang-connect-matrix/client</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_connect.html">@lobsangnet/lobsang-connect-matrix/connect</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_constants.html">@lobsangnet/lobsang-connect-matrix/constants</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_send.html">@lobsangnet/lobsang-connect-matrix/send</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix.html">@lobsangnet/lobsang-formatter-matrix</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix_constants.html">@lobsangnet/lobsang-formatter-matrix/constants</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix_fetch.html">@lobsangnet/lobsang-formatter-matrix/fetch</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix_schema.html">@lobsangnet/lobsang-formatter-matrix/schema</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix_validate.html">@lobsangnet/lobsang-formatter-matrix/validate</a></li><li><a href="module-@lobsangnet_lobsang-processor-hostname.html">@lobsangnet/lobsang-processor-hostname</a></li><li><a href="module-@lobsangnet_lobsang-processor-port.html">@lobsangnet/lobsang-processor-port</a></li>
 				</ul>
 			</li>
 			
@@ -88,11 +88,36 @@
 <p>The Lobsang Network brings search to the decentralised web.</p>
 <h2>Badges</h2><p><a href="https://circleci.com/gh/lobsangnet/lobsang.js/tree/master"><img src="https://circleci.com/gh/lobsangnet/lobsang.js/tree/master.svg?style=shield" alt="CircleCI for continous integration"></a>
 <a href="https://codecov.io/gh/lobsangnet/lobsang.js"><img src="https://codecov.io/gh/lobsangnet/lobsang.js/branch/master/graph/badge.svg" alt="codecov for coverage report summary"></a>
+<a href="https://codeclimate.com/github/lobsangnet/lobsang.js/maintainability"><img src="https://api.codeclimate.com/v1/badges/1ed4c62e97210c3c1c0c/maintainability" alt="Maintainability"></a>
 <a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/lobsangnet/lobsang.js.svg" alt="Greenkeeper for keeping dependencies up-to-date"></a>
 <a href="https://standardjs.com/"><img src="https://img.shields.io/badge/code_style-standard-brightgreen.svg" alt="JavaScript Style Guide"></a>
 <a href="https://lernajs.io/"><img src="https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg" alt="lerna to manage a monorepo"></a>
 <a href="https://snyk.io/test/github/lobsangnet/lobsang.js"><img src="https://snyk.io/test/github/lobsangnet/lobsang.js/badge.svg" alt="Known Vulnerabilities are searched for by SNYK"></a></p>
 <p>Explore <a href="https://github.com/lobsangnet/lobsang.js/tree/master/packages/">packages</a> for details.</p>
+<h2>Naming conventions</h2><p>This monorepository follows some conventions regarding the naming of packages:</p>
+<ul>
+<li>lobsang-publisher- are dealing with publishing to a channel.</li>
+<li>lobsang-subscriber- are dealing with reading from a channel. They need a topic.</li>
+<li>lobsang-connect- are combining publisher and subscriber (to be discussed).</li>
+<li>lobsang-formatter- are dealing with wrapping strings (or pre-formatted input) into a target format.</li>
+<li>lobsang-processor- are extracting information from input.</li>
+</ul>
+<h3>lobsang-publisher</h3><p>If you want to write content somewhere, you need a publisher for it.
+For now, there exists only one for Matrix.org, but more are planned
+(e.g. Redis, IPFS, WebTorrents etc).</p>
+<h3>lobsang-subscriber</h3><p>If you want to listen to some messages, you need a subscriber for that medium.
+Not only that, you will need to tell the subscriber, in which <code>topic</code>s you are
+interested in, so that it can filter the relevant messages for you.</p>
+<p>You can have more than one subscriber running.</p>
+<h3>lobsang-connect</h3><p>This is under discussion. Sometimes, you want to have both, read and write on
+a medium. A lobsang-connect package will combine publisher and subscriber to
+achieve that.</p>
+<h3>lobsang-formatter</h3><p>Often, the medium expects your message to be formatted in a certain way.
+That's why you need a formatter for it. Normally, the publisher will depend on
+it under the hood and takes care of the formatting for you.</p>
+<h3>lobsang processor</h3><p>If you have received a message in a <code>topic</code> you are interested in, you most
+likely want to process that message somehow. It would be kind if you could use
+a publisher to feed back the processed information into the network.</p>
 <h2>License</h2><p>Apache License. See <a href="https://github.com/lobsangnet/lobsang.js/blob/master/LICENSE.txt">LICENSE.txt</a>.</p></article>
     </section>
 
@@ -124,7 +149,7 @@
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-11-08T23:08:28+01:00
+		on 2018-11-10T23:54:28+01:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

@@ -33,7 +33,7 @@
 			<li class="dropdown">
 				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
 				<ul class="dropdown-menu ">
-					<li><a href="module-@lobsangnet_lobsang-connect-matrix.html">@lobsangnet/lobsang-connect-matrix</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_check.html">@lobsangnet/lobsang-connect-matrix/check</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_client.html">@lobsangnet/lobsang-connect-matrix/client</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_connect.html">@lobsangnet/lobsang-connect-matrix/connect</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_constants.html">@lobsangnet/lobsang-connect-matrix/constants</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_send.html">@lobsangnet/lobsang-connect-matrix/send</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix.html">@lobsangnet/lobsang-formatter-matrix</a></li><li><a href="module-@lobsangnet_lobsang-processor-hostname.html">@lobsangnet/lobsang-processor-hostname</a></li><li><a href="module-@lobsangnet_lobsang-processor-port.html">@lobsangnet/lobsang-processor-port</a></li>
+					<li><a href="module-@lobsangnet_lobsang-connect-matrix.html">@lobsangnet/lobsang-connect-matrix</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_check.html">@lobsangnet/lobsang-connect-matrix/check</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_client.html">@lobsangnet/lobsang-connect-matrix/client</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_connect.html">@lobsangnet/lobsang-connect-matrix/connect</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_constants.html">@lobsangnet/lobsang-connect-matrix/constants</a></li><li><a href="module-@lobsangnet_lobsang-connect-matrix_send.html">@lobsangnet/lobsang-connect-matrix/send</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix.html">@lobsangnet/lobsang-formatter-matrix</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix_constants.html">@lobsangnet/lobsang-formatter-matrix/constants</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix_fetch.html">@lobsangnet/lobsang-formatter-matrix/fetch</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix_schema.html">@lobsangnet/lobsang-formatter-matrix/schema</a></li><li><a href="module-@lobsangnet_lobsang-formatter-matrix_validate.html">@lobsangnet/lobsang-formatter-matrix/validate</a></li><li><a href="module-@lobsangnet_lobsang-processor-hostname.html">@lobsangnet/lobsang-processor-hostname</a></li><li><a href="module-@lobsangnet_lobsang-processor-port.html">@lobsangnet/lobsang-processor-port</a></li>
 				</ul>
 			</li>
 			
@@ -293,6 +293,619 @@
     
 </dd>
 
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="~lobsangFormatterSchema"><span class="type-signature">&lt;inner> </span>lobsangFormatterSchema(message, topic)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Library to wrap a message into an object which complies to the given schema.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The message to format.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>topic</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The topic in which the message should be published.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-todo method-doc-label method-doc-details-label">To Do:</dt>
+	<dd class="tag-todo">
+		<ul>
+			<li>Replace any after https://github.com/Kegsay/flow-jsdoc/issues/22</li>
+			</ul>
+	</dd>
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Promise which resolves to a SchemaMessage.
+  Or an Error if something went wrong.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;(any|Error)></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        </dl>
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+	<h1 class="page-title">Module: @lobsangnet/lobsang-formatter-matrix</h1>
+<section>
+
+<header>
+    
+</header>
+
+
+<article>
+    <div class="container-overview">
+    
+        
+
+        
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        <dl>
+            
+<hr>
+<dt>
+    <h4 class="name" id="~lobsangFormatterMatrix"><span class="type-signature">&lt;inner> </span>lobsangFormatterMatrix(message)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Library to wrap a message into an object which can be sent to matrix.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The message to format.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-todo method-doc-label method-doc-details-label">To Do:</dt>
+	<dd class="tag-todo">
+		<ul>
+			<li>Replace any after https://github.com/Kegsay/flow-jsdoc/issues/22</li>
+			</ul>
+	</dd>
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Promise which resolves to a MatrixMessage.
+  Or an Error if something went wrong.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;(any|Error)></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
+        
+            
+<hr>
+<dt>
+    <h4 class="name" id="~lobsangFormatterSchema"><span class="type-signature">&lt;inner> </span>lobsangFormatterSchema(message, topic)</h4>
+    
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        <p>Library to wrap a message into an object which complies to the given schema.</p>
+    </div>
+    
+
+    
+
+    
+
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params table table-striped">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>message</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The message to format.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>topic</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The topic in which the message should be published.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+    
+
+    
+<dl class="details">
+    
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+
+	
+
+	
+
+	
+	<dt class="tag-todo method-doc-label method-doc-details-label">To Do:</dt>
+	<dd class="tag-todo">
+		<ul>
+			<li>Replace any after https://github.com/Kegsay/flow-jsdoc/issues/22</li>
+			</ul>
+	</dd>
+	
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Promise which resolves to a SchemaMessage.
+  Or an Error if something went wrong.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;(any|Error)></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
+
+    
+</dd>
+
         </dl>
     
 
@@ -328,7 +941,7 @@
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a>
 	
-		on 2018-11-08T23:08:28+01:00
+		on 2018-11-10T23:54:28+01:00
 	
 	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
 </span>

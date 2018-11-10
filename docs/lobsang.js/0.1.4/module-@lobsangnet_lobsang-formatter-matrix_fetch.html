@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
-	<title>Lobsang Network Module: @lobsangnet/lobsang-connect-matrix/constants</title>
+	<title>Lobsang Network Module: @lobsangnet/lobsang-formatter-matrix/fetch</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,7 +61,7 @@
 		<div id="main">
 			
 
-	<h1 class="page-title">Module: @lobsangnet/lobsang-connect-matrix/constants</h1>
+	<h1 class="page-title">Module: @lobsangnet/lobsang-formatter-matrix/fetch</h1>
 <section>
 
 <header>
@@ -129,45 +129,36 @@
     
 
     
-        <h3 class="subsection-title">Members</h3>
+
+    
+        <h3 class="subsection-title">Methods</h3>
 
         <dl>
             
 <hr>
-<dt class="name" id="~CONSTANTS">
-    <h4 id="~CONSTANTS"><span class="type-signature">&lt;private, inner, constant> </span>CONSTANTS<span class="type-signature"> :Object</span></h4>
-
+<dt>
+    <h4 class="name" id="~fetch"><span class="type-signature">&lt;private, inner> </span>fetch(url)</h4>
+    
     
 </dt>
 <dd>
+
     
     <div class="description">
-        <p>Holds constants used all over this lib.</p>
+        <p>Wrapper around node-fetch for network trips.</p>
     </div>
     
 
     
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">Object</span>
 
-
-
-            </li>
-        </ul>
     
 
     
-<dl class="details">
     
+        <h5>Parameters:</h5>
+        
 
-    <h5 class="subsection-title">Properties:</h5>
-
-    <dl>
-
-<table class="props table table-striped">
+<table class="params table table-striped">
     <thead>
     <tr>
         
@@ -189,13 +180,13 @@
 
         <tr>
             
-                <td class="name"><code>MATRIX_HOMESERVER</code></td>
+                <td class="name"><code>url</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type">string</span>
 
 
 
@@ -206,158 +197,17 @@
 
             
 
-            <td class="description last"><p>The matrix home server to connect to.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>MATRIX_ACCESS_TOKEN</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Your matrix access token.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>MATRIX_USER_ID</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Your user ID.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>MATRIX_ROOM_ID</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>The room ID to push messages into.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>MATRIX_ROOM_MESSAGE_TYPE</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Defined type for room messages.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>MATRIX_STATE_SYNCING</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Defined constant for sync state.</p></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>MATRIX_STATE_PREPARED</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">String</span>
-
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"><p>Defined constant for prepared state.</p></td>
+            <td class="description last"><p>The resource to fetch.</p></td>
         </tr>
 
     
     </tbody>
 </table>
-</dl>
 
+    
+
+    
+<dl class="details">
     
 
 	
@@ -395,13 +245,48 @@
 	
 </dl>
 
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <p>Promise which resolves to a parsed JSON object.
+  Or an Error if something went wrong.</p>
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;(object|Error)></span>
+
+
+
+    </dd>
+</dl>
+
+
+        
 
     
 </dd>
 
         </dl>
-    
-
     
 
     
