@@ -1,6 +1,6 @@
 {
   "name": "@lobsangnet/lobsang-connect-matrix",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Allows connection to matrix for writing.",
   "keywords": [
     "matrix",
@@ -37,7 +37,7 @@
     "url": "https://github.com/lobsangnet/lobsang.js/issues"
   },
   "dependencies": {
-    "@lobsangnet/lobsang-formatter-matrix": "0.1.1",
+    "@lobsangnet/lobsang-formatter-matrix": "0.1.2",
     "dotenv": "6.1.0",
     "matrix-js-sdk": "0.12.1",
     "olm": "https://matrix.org/packages/npm/olm/olm-2.3.0.tgz"

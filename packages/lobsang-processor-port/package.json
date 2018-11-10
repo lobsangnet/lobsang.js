@@ -1,6 +1,6 @@
 {
   "name": "@lobsangnet/lobsang-processor-port",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Extracts the port from an URL",
   "keywords": [
     "lobsang",

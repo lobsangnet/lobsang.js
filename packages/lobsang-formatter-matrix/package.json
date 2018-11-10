@@ -1,6 +1,6 @@
 {
   "name": "@lobsangnet/lobsang-formatter-matrix",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Formats a message so you can send it to matrix.",
   "keywords": [
     "lobsang",
