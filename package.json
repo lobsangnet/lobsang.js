@@ -40,7 +40,9 @@
     "snyk:lobsang-formatter-schema": "snyk test --file=packages/lobsang-formatter-schema/package.json",
     "snyk:lobsang-processor-hostname": "snyk test --file=packages/lobsang-processor-hostname/package.json",
     "snyk:lobsang-processor-port": "snyk test --file=packages/lobsang-processor-port/package.json",
-    "test": "nyc ava --tap | tap-xunit > coverage/junit.xml",
+    "test": "npm run test:ci",
+    "test:ci": "nyc ava --tap | tap-xunit > coverage/junit.xml",
+    "test:coverage": "nyc ava",
     "test:watch": "ava --watch"
   },
   "repository": {
