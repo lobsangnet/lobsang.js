@@ -12,11 +12,11 @@ test('rejects if bogus input is sent', async (t) => {
 })
 
 test('rejects if not an url', async (t) => {
-  const url = 'not.an.url'
+  const url = 'mailto:me@example.com'
   const error = await t.throwsAsync(async () => {
     await lobsangProcessorHostname(url)
   })
-  t.is(error.message, `Invalid URL: ${url}`)
+  t.is(error.message, `Not an URL`)
 })
 
 test('extracts the hostname from an url', async (t) => {

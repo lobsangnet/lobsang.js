@@ -11,14 +11,6 @@ test('rejects if bogus input is sent', async (t) => {
   t.is(error.message, `Invalid URL: ${url}`)
 })
 
-test('rejects if not an url', async (t) => {
-  const url = 'not.an.url'
-  const error = await t.throwsAsync(async () => {
-    await lobsangProcessorPort(url)
-  })
-  t.is(error.message, `Invalid URL: ${url}`)
-})
-
 test('rejects if no port associated', async (t) => {
   const url = 'mailto:john@doe.foo'
   const error = await t.throwsAsync(async () => {
@@ -28,7 +20,13 @@ test('rejects if no port associated', async (t) => {
 })
 
 test('extracts the port form an url', async (t) => {
-  const url = 'http://my.example.com:80'
+  const url = 'http://my.example.com:8080'
+  const port = await lobsangProcessorPort(url)
+  t.is(port, '8080')
+})
+
+test('derives the port from the protocol', async (t) => {
+  const url = 'http://my.example.com'
   const port = await lobsangProcessorPort(url)
   t.is(port, '80')
 })
