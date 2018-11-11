@@ -36,7 +36,7 @@ function lobsangProcessorHostname (link) {
     return Promise.reject(error)
   }
 
-  if (parts.hostname === null) {
+  if (parts.hostname === '') {
     return Promise.reject(new Error('Not an URL'))
   }
 
