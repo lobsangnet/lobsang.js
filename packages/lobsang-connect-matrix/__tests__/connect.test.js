@@ -9,6 +9,6 @@ test.skip('returns an Promise', async (t) => {
     startClient: () => {},
     once: sinon.stub()
   }
-  const observable = await connect(fakeClient)
+  await connect(fakeClient)
   t.true(fakeClient.once.called)
 })
