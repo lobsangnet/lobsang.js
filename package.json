@@ -56,7 +56,6 @@
     "ignore": [
       "docs",
       "packages/lobsang-connect-matrix/__tests__/client.test.js",
-      "packages/lobsang-connect-matrix/__tests__/connect.test.js",
       "packages/lobsang-connect-matrix/__tests__/lobsang-connect-matrix.test.js",
       "packages/lobsang-formatter-schema/__tests__/fetch.test.js"
     ]

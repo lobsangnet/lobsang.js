@@ -15,7 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-const CONSTANTS = require('./constants')
+const wrapper = require('./sync')
 
 /**
  * @module @lobsangnet/lobsang-connect-matrix/connect
@@ -34,35 +34,14 @@ function connect (client) {
   client.startClient()
 
   return new Promise((resolve, reject) => {
-    client.once('sync', (state, prevState, res) => {
-      if (isSyncState(state)) {
+    client.once('sync', (state) => {
+      if (wrapper.isSyncState(state)) {
         return resolve(client)
       } else {
         return reject(new Error('Client could not sync'))
       }
     })
   })
-}
-
-/**
- * Helper method to check the state against those indicating some sync state.
- *
- * @private
- * @param {String} state - The current state of MatrixClient
- * @returns {Boolean}
- *   Indicating whether the client is already synced (or syncing)
- *   Or in another state.
- */
-function isSyncState (state) {
-  if (state === CONSTANTS.MATRIX_STATE_PREPARED) {
-    return true
-  }
-
-  if (state === CONSTANTS.MATRIX_STATE_SYNCING) {
-    return true
-  }
-
-  return false
 }
 
 module.exports = connect
