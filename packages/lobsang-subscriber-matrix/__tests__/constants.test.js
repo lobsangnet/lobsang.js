@@ -23,6 +23,10 @@ test.skip('has MATRIX_ROOM_ID', (t) => {
   t.truthy(CONSTANTS.MATRIX_ROOM_ID)
 })
 
+test('has MATRIX_ROOM_MESSAGE_TYPE', (t) => {
+  t.truthy(CONSTANTS.MATRIX_ROOM_MESSAGE_TYPE)
+})
+
 test('has MATRIX_ROOM_TIMELINE_TYPE', (t) => {
   t.truthy(CONSTANTS.MATRIX_ROOM_TIMELINE_TYPE)
 })

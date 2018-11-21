@@ -61,7 +61,6 @@
       "packages/lobsang-connect-matrix/__tests__/client.test.js",
       "packages/lobsang-connect-matrix/__tests__/lobsang-connect-matrix.test.js",
       "packages/lobsang-formatter-schema/__tests__/fetch.test.js",
-      "packages/lobsang-subscriber-matrix/__tests__/client.test.js",
       "packages/lobsang-subscriber-matrix/__tests__/lobsang-subscriber-matrix.test.js"
     ]
   },

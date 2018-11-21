@@ -3,4 +3,7 @@ import test from 'ava'
 
 import client from '../lib/client'
 
-test.todo('Write an integration test')
+test('it creates a matrix client', async (t) => {
+  const matrixClient = await client()
+  t.truthy(matrixClient.startClient)
+})
