@@ -73,7 +73,7 @@
   "devDependencies": {
     "@commitlint/cli": "7.3.1",
     "@commitlint/config-conventional": "7.3.0",
-    "ava": "1.1.0",
+    "ava": "1.2.1",
     "codecov": "3.1.0",
     "flow-bin": "0.87.0",
     "flow-jsdoc": "0.3.1",
