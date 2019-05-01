@@ -40,7 +40,7 @@
     "@lobsangnet/lobsang-formatter-matrix": "0.1.2",
     "dotenv": "6.1.0",
     "matrix-js-sdk": "0.12.1",
-    "olm": "https://gitlab.matrix.org/matrix-org/olm/-/archive/3.1.2/olm-3.1.2.tar.gz"
+    "olm": "https://packages.matrix.org/npm/olm/olm-2.3.0.tgz"
   },
   "devDependencies": {
     "sinon": "7.1.1"
