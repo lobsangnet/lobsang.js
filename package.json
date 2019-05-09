@@ -74,7 +74,7 @@
     "@commitlint/cli": "7.6.0",
     "@commitlint/config-conventional": "7.6.0",
     "ava": "1.2.1",
-    "codecov": "3.3.0",
+    "codecov": "3.4.0",
     "flow-bin": "0.98.1",
     "flow-jsdoc": "0.3.1",
     "gh-pages": "2.0.1",
