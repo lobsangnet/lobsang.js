@@ -32,6 +32,6 @@
     "url": "https://github.com/lobsangnet/lobsang.js/issues"
   },
   "dependencies": {
-    "port-numbers": "4.0.4"
+    "port-numbers": "^6.0.1"
   }
 }

@@ -37,11 +37,11 @@
     "url": "https://github.com/lobsangnet/lobsang.js/issues"
   },
   "dependencies": {
-    "ajv": "6.5.5",
-    "choosealicense-list": "1.0.0",
-    "node-fetch": "2.2.1"
+    "ajv": "^6.12.5",
+    "choosealicense-list": "^1.2.0",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "sinon": "7.1.1"
+    "sinon": "^9.2.0"
   }
 }

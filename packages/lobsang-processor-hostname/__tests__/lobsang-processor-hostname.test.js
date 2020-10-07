@@ -16,7 +16,7 @@ test('rejects if not an url', async (t) => {
   const error = await t.throwsAsync(async () => {
     await lobsangProcessorHostname(url)
   })
-  t.is(error.message, `Not an URL`)
+  t.is(error.message, 'Not an URL')
 })
 
 test('extracts the hostname from an url', async (t) => {
