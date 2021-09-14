@@ -39,7 +39,7 @@
   "dependencies": {
     "@lobsangnet/lobsang-formatter-matrix": "0.1.2",
     "dotenv": "8.2.0",
-    "matrix-js-sdk": "8.4.1",
+    "matrix-js-sdk": "12.4.1",
     "olm": "https://packages.matrix.org/npm/olm/olm-2.3.0.tgz"
   },
   "devDependencies": {
